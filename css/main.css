@@ -1,0 +1,9 @@
+h2 a{
+ background: url("../images/logo1-3.svg") no-repeat scroll 0 0 transparent;
+ color: transparent;
+ display: block;
+ font: 0px/0 a;
+ height: 100px;
+ text-shadow: none;
+ width: 200px;
+}
