@@ -1,0 +1,19 @@
+body {
+    background:
+      url(images/logo1-3.svg) 90% 90% no-repeat fixed,
+      url(images/logo1-3.svg) 40% 40% no-repeat fixed,
+      url(images/logo1-3.svg) no-repeat fixed;
+    background-size: auto, auto, cover;
+    -webkit-animation: ball 40s linear infinite;
+    animation: ball 40s linear infinite;
+   }
+   @-webkit-keyframes ball {
+    from { background-position: 3000px 90%, 180% 40%, 0 0; }
+    to { background-position: -2000px 90%, -300px 20%, 0 0; }
+   }
+   @keyframes ball {
+    from { background-position: 3000px 90%, 180% 40%, 0 0; }
+    to { background-position: -2000px 90%, -300px 20%, 0 0; }
+   }
+}
+h1 {color: red}
