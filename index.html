@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
 
@@ -14,15 +14,26 @@
 </header>
 <div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-                <img src="img/logo1-3.svg" alt="Logo" class="img-circle img-responsive">
-                <h1>Заголовок</h1>
-			    <ul class="list-inline">
-			        <li><a href=#>Сепульки</a></li>
-			        <li><a href=#>Сепулькарии</a></li>
-			        <li><a href=#>Сепуление</a></li>
+			<div class="col-xs-4">
+                <img src="#" alt="Логотип ресурса">
+            </div>
+            <div class="col-xs-8">
+                <h1>Заголовок сайта</h1>
+                <nav>
+                    <button class="btn btn-default" id="dropdownMenu" type="button" data-toggle="dropdown"
+                aria-expanded="false">Меню <span class="caret"></span>
+
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li role="presentation"><a role="menuitem" href="#">Сепулька</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">Сепулькарии</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">Сепуление</a></li>
                 </ul>
+					</button>
+                </nav>
+
 			</div>
+        </div>
+        <div class="row">
 			<div class="col-xs-12 col-sm-8 col-md-8">Колонка 1
 				<h2>Пример 1. Цвета текста</h2>
 				<p class="text-muted">Серый цвет</p>
@@ -105,6 +116,15 @@
 			</div>
 		</div>
 	</div>
+    <ul class="pagination">
+  <li class="disabled"><a href="#">&laquo;</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li ><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 
