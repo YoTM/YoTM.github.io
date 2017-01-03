@@ -6,6 +6,7 @@
     <title>Ё-моё сайт</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/yo.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -20,114 +21,31 @@
             <div class="col-xs-8">
                 <h1>Заголовок сайта</h1>
                 <nav>
-                    <button class="btn btn-default" id="dropdownMenu" type="button" data-toggle="dropdown"
-                aria-expanded="false">Меню <span class="caret"></span>
-
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                    <li role="presentation"><a role="menuitem" href="#">Сепулька</a></li>
-                    <li role="presentation"><a role="menuitem" href="#">Сепулькарии</a></li>
-                    <li role="presentation"><a role="menuitem" href="#">Сепуление</a></li>
-                </ul>
-					</button>
-                </nav>
+					<a href="./teachers.html">Учителям</a>
+                    <a href="./pupils.html">Ученикам</a>
+                    <a href="./parents.html">Родителям</a>
+                    <a href="./contacts.html">Контакты</a>
+				</nav>
 
 			</div>
         </div>
         <div class="row">
-			<div class="col-xs-12 col-sm-8 col-md-8">Колонка 1
-				<h2>Пример 1. Цвета текста</h2>
-				<p class="text-muted">Серый цвет</p>
-				<p class="text-primary">Основной текст</p>
-				<p class="text-success">Цвет для сообщения об успехе</p>
-				<p class="text-info">Цвет для информации</p>
-				<p class="text-warning">Цвет для предупреждений</p>
-				<p class="text-danger">Цвет для сообщений об ошибках</p>
-				<h2>Пример 2. Фон элементов</h2>
-				<p class="bg-primary">Основной текст</p>
-				<p class="bg-success">Цвет для сообщения об успехе</p>
-				<p class="bg-info">Цвет для информации</p>
-				<p class="bg-warning">Цвет для предупреждений</p>
-				<p class="bg-danger">Цвет для сообщений об ошибках</p>
-				<h1>Борщ</h1>
-				<div class="pull-right bg-info" style="width: 20em; padding: 10px;">
-					<h2><small>Хозяйке на заметку</small></h2>
-					<p>Борщ получится вкуснее, если добавить в него немного соли.</p>
-				</div>
-				<p>Мясо отварить до готовности. Промыть свеклу, очистить,
-				  нарезать соломкой и тушить с помидорами до полуготовности.</p>
-				<p>Бульон процедить, мясо нарезать кусочками. В бульон добавить
-				  нарезанный дольками картофель, довести до кипения, опустить нарезанную
-				  соломкой свежую капусту и варить 10-15 минут, добавить пассерованные
-				  овощи, болгарский перец, нашинкованный тонкой соломкой,
-				  специи и довести до готовности.</p>
-				<p>Готовому борщу дать настояться в течение 20-25 минут.
-				  При подаче к столу добавить сметану, мясо, зелень.</p>
-
-				<h2><small>Пример 1. Создание лида</small></h2>
-				<p class="lead">Дорогой друг! Я расскажу тебе удивительную историю
-				 про маленького червячка, который жил в яблоке,
-				 о его путешествии в волшебную страну Нортландия, о том,
-				 какие опасности подстерегали его на пути, кого он повстречал
-				 по дороге, какие приключения и испытания прошёл,
-				 и что он рассказал по возвращению домой.</p>
-				<p>Итак, сказка про маленького червячка, который жил в яблоке,
-				 о его путешествии в волшебную страну Нортландия, о том,
-				 какие опасности подстерегали его на пути, кого он повстречал
-				 по дороге, какие приключения и испытания прошёл,
-				 и что он рассказал по возвращению домой.</p>
-				<h2>Пример 2. Аббревиатура</h2>
-				<p><abbr title="Cascading Style Sheets, Каскадные таблицы стилей">CSS</abbr> —
-				набор параметров форматирования, который применяется к элементам
-				документа, чтобы изменить их внешний вид. </p>
-				<!-- При добавлении класса initialism к элементу <abbr> для него устанавливается свойство font-size со значением 90%, тем самым аббревиатура выводится уменьшенного размера.-->
-				<abbr title="Cascading Style Sheets, каскадные таблицы стилей" class="initialism">CSS</abbr>
-
-				<h3>Пример 3. Добавление цитаты</h3>
-				<blockquote>
-				 <p>Нельзя сказать человеку: «Ты можешь творить.
-				  Так давай, твори». Гораздо вернее подождать, пока он
-				  сам не скажет: «Я могу творить, и я буду творить, хотите
-				  вы этого или нет».</p>
-				 <p><small>Айзек Азимов</small></p>
-				</blockquote>
-
-				<h3>Пример 4. Вывод программы</h3>
-				<p>Функция <code>checkParent()</code> вызывается
-				  с параметрами <var>src</var> и <var>dest</var>.</p>
-				  <!--Элемент <pre> занимает высоту равную его содержимому, что для больших листингов может быть неудобно. Чтобы ограничить высоту достаточно добавить класс pre-scrollable, тогда высота будет равна 350 пикселей и появится вертикальная полоса прокрутки.-->
-				<pre class="pre-scrollable">function checkParent (src, dest) {
-				  while (src != null) {
-					if (src.tagName == dest)
-					  src = src.parentElement
-					}
-				  return null
-				}</pre>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">Колонка 2
-
-				<h2>Пример 1. Кнопки</h2>
-				<button type="button" class="btn btn-default btn-block">Кнопка по умолчанию</button>
-				<button type="button" class="btn btn-primary">Основная кнопка</button>
-				<button type="button" class="btn btn-info"><i class="glyphicon glyphicon-search">Информация</i></button>
-				<button type="button" class="btn btn-warning">Предупреждение</button>
-				<button type="button" class="btn btn-danger">Ошибка</button>
-				<button type="button" class="btn btn-link">Кнопка как ссылка</button>
-
+			<div class="col-xs-12 col-sm-8 col-md-8">
+				Колонка 1
 			</div>
 		</div>
-	</div>
-    <ul class="pagination">
-  <li class="disabled"><a href="#">&laquo;</a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li ><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
-</ul>
+
+		<ul class="pagination">
+ 			<li class="disabled"><a href="#">&laquo;</a></li>
+  			<li class="active"><a href="#">1</a></li>
+  			<li ><a href="#">2</a></li>
+  			<li><a href="#">3</a></li>
+  			<li><a href="#">4</a></li>
+  			<li><a href="#">5</a></li>
+  			<li><a href="#">&raquo;</a></li>
+		</ul>
+</div>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-
-
 </body>
 </html>
