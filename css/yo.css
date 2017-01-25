@@ -1,0 +1,27 @@
+/* Файл моих стилей поверх бутстрапа */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    min-width: 150px;
+    border: 1px black;
+    font-size: 1.5em;
+    text-align: center;
+    padding:  8px;
+    margin: 2px;
+    background: lightgreen;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+.menu a:hover {
+    background: gold;
+    font-style: bold;
+}
+body {
+    margin: 10px;
+}
