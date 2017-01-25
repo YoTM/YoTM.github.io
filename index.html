@@ -1,51 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 <head>
     <meta charset="utf-8">
 
-    <title>Ё-моё сайт</title>
+    <title>Ё-сайт</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/yo.css" rel="stylesheet">
 </head>
 <body>
-<header>
-
-
-</header>
+<!--Начало сетки сайта-->
 <div class="container">
-		<div class="row">
-			<div class="col-xs-4">
-                <img src="#" alt="Логотип ресурса">
+<header>
+	<div class="row">
+			<div class="col-xs-12 col-sm-2">
+                <img src="#" alt="Логотип ресурса" width="100px" height="50px">
             </div>
-            <div class="col-xs-8">
-                <h1>Заголовок сайта</h1>
-                <nav>
-					<a href="./teachers.html">Учителям</a>
-                    <a href="./pupils.html">Ученикам</a>
-                    <a href="./parents.html">Родителям</a>
-                    <a href="./contacts.html">Контакты</a>
+            <div class="col-xs-12 col-sm-10">
+                 <!--<h1>Заголовок сайта</h1>-->
+                <nav class="menu">
+					<!--<div class="col-xs-12 col-sm-2">-->
+						<!--<a href="./index.html">Главная</a>-->
+						<!--</div>-->
+					<div class="col-xs-12 col-sm-3">
+						<a href="./teachers.html">Учителям</a>
+						</div>
+					<div class="col-xs-12 col-sm-3">
+						<a href="./pupils.html">Ученикам</a>
+						</div>
+					<div class="col-xs-12 col-sm-3">
+						<a href="./parents.html">Родителям</a>
+					</div>
+					<div class="col-xs-12 col-sm-2">
+						<a href="./contacts.html">Контакты</a>
+					</div>
 				</nav>
 
 			</div>
         </div>
+</header>
+	<!--Начало контента страницы-->
         <div class="row">
 			<div class="col-xs-12 col-sm-8 col-md-8">
-				Колонка 1
+				<h2>Главная</h2>
+				<p>Здесь надо написать текст приветствия гостей</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+				<h2>Новости:</h2>
+				<p>Сюда будут добавляться новости проекта</p>
 			</div>
 		</div>
-
 		<ul class="pagination">
- 			<li class="disabled"><a href="#">&laquo;</a></li>
-  			<li class="active"><a href="#">1</a></li>
+			<li class="disabled"><a href="#">&laquo;</a></li>
+			<li class="active"><a href="#">1</a></li>
   			<li ><a href="#">2</a></li>
-  			<li><a href="#">3</a></li>
-  			<li><a href="#">4</a></li>
-  			<li><a href="#">5</a></li>
-  			<li><a href="#">&raquo;</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">&raquo;</a></li>
 		</ul>
 </div>
+
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
+
+<footer>
+    <small>&copy; 2016 Ёлкин Т.</small>
+</footer>
 </html>
